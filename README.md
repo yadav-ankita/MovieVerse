@@ -18,7 +18,6 @@ MovieVerse is a web application built with ASP.NET Core Razor Pages that allows 
 
 - [.NET 6.0+ SDK](https://dotnet.microsoft.com/download)
 - [PostgreSQL](https://www.postgresql.org/) (or update connection string for your DB)
-- [Node.js and npm](https://nodejs.org/) (for front-end assets, optional)
 - TMDB API Key ([Get one here](https://www.themoviedb.org/documentation/api))
 
 ### Setup
@@ -57,8 +56,6 @@ dotnet run
 - `Migrations/` - Entity Framework Core migrations
 
 ## Security
-
-- **API Key:** Never commit your TMDB API key to source control. Use the `.env` file or environment variables.
 - **Authentication:** Uses ASP.NETCore Identity for user management.
 
 ## Contributing
