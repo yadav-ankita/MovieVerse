@@ -59,28 +59,6 @@ if (!await roleManager.RoleExistsAsync("User"))
     var userRole = new IdentityRole("User");
     await roleManager.CreateAsync(userRole);
 }
-//var adminPassword = adminDetails.Password;
-//var adminUsername = adminDetails.UserName;
-//var adminEmail = adminDetails.Email;
-//var adminProfilePicturePath = adminDetails.ProfilePicturePath;
-//using var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
-//var adminUser = await userManager.FindByNameAsync(adminUsername);
-//if (adminUser == null)
-//{
-//    adminUser = new AppUser
-//    {
-//        UserName = adminUsername,
-//        Email = adminEmail,
-//        EmailConfirmed = true,
-//        LockoutEnabled = false,
-//        ProfilePicturePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "ProfilePictures", adminProfilePicturePath)
-//    };
-//    var result = await userManager.CreateAsync(adminUser, adminPassword);
-//    if (result.Succeeded)
-//    {
-//        await userManager.AddToRoleAsync(adminUser, "Admin");
-//    }
-//}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
